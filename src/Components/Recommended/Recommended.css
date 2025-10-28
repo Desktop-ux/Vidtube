@@ -1,0 +1,32 @@
+.Recommended{
+    flex-basis: 30%;
+    padding: 0 1rem;
+}
+
+.side-video-list{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 0.5rem;
+}
+.side-video-list img{
+   flex-basis: 49%;
+   width: 50%;
+    border-radius: 1rem;
+}
+
+.vid-info{
+    flex-basis: 49%;
+    padding: 0 0.25rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* gap: 0.3rem;               */
+}
+.vid-info h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.vid-info span{
+    font-size: 0.9rem;
+    color: #5a5a5a;
+}
