@@ -25,7 +25,7 @@ const Navbar = ({setsidebar}) => {
         <img className="nav_icons" src={upload_icon} alt="" />
         <img className="nav_icons" src={more_icon} alt="" />
         <img className="nav_icons" src={notification_icon} alt="" />
-        <img  width="20%" src={profile_img} alt="" />
+        <img  width="20%" className="userivon" src={profile_img} alt="" />
       </div>
     </nav>
   );

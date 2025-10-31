@@ -10,3 +10,10 @@
 .large_container{
     padding-left: 7%;
 }
+
+@media (max-width: 908px) {
+    .container , .large_container{
+      padding-left: 5%;
+    padding-right: 5%;
+    }
+}

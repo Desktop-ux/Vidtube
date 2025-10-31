@@ -30,3 +30,9 @@
     font-size: 0.9rem;
     color: #5a5a5a;
 }
+
+@media (max-width: 908px) {
+    .Recommended{
+        flex-basis: 100%;
+    }
+}

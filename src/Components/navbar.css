@@ -8,6 +8,8 @@
     justify-content: space-between;
     box-shadow: 0 0 30px #1111112f;
     z-index: 100;
+    /* position: fixed; */
+    background-color: white;
 }
 
 .nav_left{
@@ -65,4 +67,25 @@
 
 .nav_icons{
     width: 10%;
+}
+
+
+@media (max-width : 900px){
+    .menu{
+        display: none;
+    }
+
+    .nav_right img{
+        display: none;
+    }
+    .nav_right .userivon {
+        display: block;
+    }
+    .logo{
+        width: 5rem;
+    }
+    .nav_middle .search_icon input{
+        width: 80%;
+
+    }
 }

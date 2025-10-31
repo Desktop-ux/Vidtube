@@ -7,10 +7,11 @@ import dislike from '../../assets/dislike.png'
 import share from '../../assets/share.png'
 import save from '../../assets/save.png'
 import jack from '../../assets/jack.png'
-import profile_img from "../../assets/Profile.png"
+import profile_img from "../../assets/profile.png"
 import { Api_key, value_converter } from '../../script'
 import moment from 'moment'
 import { data, useParams } from 'react-router-dom'
+import ReadMore from '../Readmore/Readmore'
 
 const VideoPlay = ({}) => {
 
@@ -70,7 +71,9 @@ const VideoPlay = ({}) => {
         <button>Subscribe</button>
       </div>
       <div className="vid-description">
-        <p>{apiData ? apiData.snippet.description : "Description Here"}</p>
+        {/* <p>{apiData ? apiData.snippet.description : "Description Here"}</p> */}
+        <ReadMore text={apiData ? apiData.snippet.description : "Description Here"} maxLength={150} />
+
         <hr />
         <h4>{apiData ? value_converter(apiData.statistics.commentCount) : "150"} Comments</h4>
         {commentData && commentData.map((item, index) => {
@@ -78,7 +81,7 @@ const VideoPlay = ({}) => {
             <div key={index} className="comment">
               <img src={item.snippet.topLevelComment.snippet.authorProfileImageUrl} alt="" />
               <div>
-                <h3>{item.snippet.topLevelComment.snippet.authorDisplayName}<span>1 day ago</span></h3>
+                <h3>{item.snippet.topLevelComment.snippet.authorDisplayName ? item.snippet.topLevelComment.snippet.authorDisplayName : {profile_img}}<span>1 day ago</span></h3>
                 <p>{item.snippet.topLevelComment.snippet.textDisplay}</p>
                 <div className="comment-action">
                   <img src={like} alt="" />

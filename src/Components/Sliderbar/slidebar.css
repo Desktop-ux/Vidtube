@@ -79,3 +79,10 @@
     padding-bottom: 0.1rem;
     border-bottom: 3px solid red;
 }
+
+
+@media (max-width: 908px) {
+    .slidebar{
+        display: none;
+    }
+}
