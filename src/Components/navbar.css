@@ -8,7 +8,8 @@
     justify-content: space-between;
     box-shadow: 0 0 30px #1111112f;
     z-index: 100;
-    /* position: fixed; */
+    position:sticky;
+    top: 0;
     background-color: white;
 }
 
